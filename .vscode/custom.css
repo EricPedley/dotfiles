@@ -1,0 +1,69 @@
+/*Animated Status Bar*/
+
+@keyframes leftright {
+    0% {
+        background-position:
+            0% 0%
+    }
+
+    100% {
+        background-position:
+            125% 0%
+    }
+}
+
+#workbench\.parts\.statusbar {
+    background:
+        /* linear-gradient(-45deg, #3b32d9, #23a6d5); */
+        linear-gradient(90deg,
+            #ee7752,
+            #e73c7e,
+            #23a6d5,
+            #23d5ab,
+            #23a6d5,
+            #e73c7e,
+            #ee7752);
+    background-size: 500% 100%;
+    animation: leftright 180s linear infinite;
+}
+
+/* Box shadown on split terminals */
+
+.terminal-split-pane:nth-child(1)::after {
+
+    content:
+        "";
+
+    box-shadow:
+        -2px 20px 20px 0px rgb(0 0 0 / 0.8) inset;
+
+    height:
+        100%;
+
+    position:
+        absolute;
+
+    width:
+        100%;
+
+    left:
+        0px;
+
+    top:
+        0px;
+
+    z-index:
+        200;
+
+    pointer-events:
+        none
+}
+
+.monaco-workbench .pane-body.integrated-terminal .terminal-group .monaco-split-view2.vertical .split-view-view:not(:first-child) {
+
+    border-image:
+        linear-gradient(90deg,
+        #23a6d5,
+            black) 1;
+
+}
