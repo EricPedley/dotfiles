@@ -10,16 +10,15 @@
 #POWERLINE_BASH_SELECT=1
 #. /usr/share/powerline/bindings/bash/powerline.sh
 
-. ~/git-prompt.sh
-#
-make_prompt() {
+. "git-prompt.sh"
+
+make_prompt () { 
     if [ "$VIRTUAL_ENV" = "" ]; then
-        local prompt_string="\[\e[48;5;026m\] \w \[\e[38;5;026m\e[49m\]" # no venv
+        local prompt_string="\[\e[48;5;032m\] \w \[\e[38;5;032m\e[49m\]";
     else
-        local prompt_string="\[\e[48;5;002m\] 🐍 \w \[\e[48;5;0;38;5;002m\]" # with venv
-    fi  
-    __git_ps1  "${prompt_string}" "\[\033[0m\]\n> "
-    #__git_ps1  "\[\e[48;5;002m\]${CONDA_PROMPT_MODIFIER}\[\e[48;5;033m\] ${prompt_string}" "\[\033[0m\]\n> "
+        local prompt_string="\[\e[48;5;002m\] 🐍 \w \[\e[48;5;0;38;5;002m\]";
+    fi;
+    __git_ps1 "${prompt_string}" "\[\033[0m\]\n> "
 }
 
 PROMPT_COMMAND='make_prompt'
