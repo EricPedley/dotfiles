@@ -1,3 +1,5 @@
+/* Copied to  /opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.css */
+
 /*Animated Status Bar*/
 
 @keyframes leftright {
@@ -29,7 +31,7 @@
 
 /* Box shadown on split terminals */
 
-.terminal-split-pane:nth-child(1)::after {
+.split-view-container:nth-child(2)::after {
 
     content:
         "";
@@ -59,11 +61,11 @@
         none
 }
 
-.monaco-workbench .pane-body.integrated-terminal .terminal-group .monaco-split-view2.vertical .split-view-view:not(:first-child) {
+/* .monaco-workbench .pane-body.integrated-terminal .terminal-group .monaco-split-view2.vertical .split-view-view:nth-child(2) {
 
     border-image:
         linear-gradient(90deg,
         #23a6d5,
             black) 1;
 
-}
+} */
