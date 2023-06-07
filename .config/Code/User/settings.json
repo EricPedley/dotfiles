@@ -116,7 +116,6 @@
     "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
     "explorer.confirmDelete": false,
     "zenMode.centerLayout": false,
-    "workbench.activityBar.visible": false,
     "[python]": {
         "editor.formatOnType": true
     },
@@ -156,7 +155,19 @@
             "when": "editorTextFocus && !editorReadonly"
         }
     ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        }
+    ],
     "python.analysis.extraPaths": [
         "/opt/ros/noetic/lib/python3.10/site-packages"
-    ]
+    ],
+    "keyboard.dispatch": "keyCode",
+    "workbench.activityBar.visible": false // for caps/esc switch in vim extension
 }

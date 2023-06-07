@@ -21,14 +21,15 @@ myKeys conf@(XConfig {modMask = modKey}) =
   ((modKey, xK_v), spawn "rofi -modi \"clipboard:greenclip print\" -show clipboard -run-command '{cmd}'"),
   ((modKey, xK_o), spawn "rofi -show run"),
   ((modKey, xK_p), spawn "rofi -show window"),
-  ((modKey, xK_bracketleft), spawn "rofi-code"),
+  ((modKey, xK_bracketleft), spawn "rofi -show vscode-recent -modi vscode-recent"),
   ((modKey, xK_period), spawn "rofimoji --action clipboard"),
   ((modKey, xK_Return), spawn "xterm"),
   ((0, xF86XK_MonBrightnessDown), spawn "brightnessctl s 5%-"),
   ((0, xF86XK_MonBrightnessUp), spawn "brightnessctl s +10%"),
   ((0, xF86XK_AudioPlay), spawn "playerctl play-pause"),
   ((0, xF86XK_AudioPrev), spawn "playerctl previous"),
-  ((0, xF86XK_AudioNext), spawn "playerctl next")
+  ((0, xF86XK_AudioNext), spawn "playerctl next"),
+  ((0, xF86XK_AudioMute), spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")
  ]
 
 myManageHook = composeAll

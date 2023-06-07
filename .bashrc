@@ -51,3 +51,5 @@ neofetch
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 source /opt/ros/noetic/setup.bash
+# autojump
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
