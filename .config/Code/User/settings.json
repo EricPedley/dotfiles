@@ -4,10 +4,10 @@
     ],
     "julia.symbolCacheDownload": true,
     "julia.enableTelemetry": false,
-    "window.zoomLevel": 1,
     "editor.fontFamily": "'Source Code Pro', 'monospace', monospace",
     "keyboard.dispatch": "keyCode",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "indentRainbow.indicatorStyle": "light"
 }
