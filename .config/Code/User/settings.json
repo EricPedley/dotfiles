@@ -9,5 +9,13 @@
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
     "window.menuBarVisibility": "toggle",
-    "indentRainbow.indicatorStyle": "light"
+    "indentRainbow.indicatorStyle": "light",
+    "githubPullRequests.pullBranch": "never",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "workbench.panel.defaultLocation": "right",
+    "cSpell.userWords": [
+        "setpoint"
+    ],
+    "explorer.confirmDelete": false
 }

@@ -22,7 +22,7 @@ myKeys conf@(XConfig {modMask = modKey}) =
   ((modKey, xK_o), spawn "rofi -show run"),
   ((modKey, xK_p), spawn "rofi -show window"),
   ((modKey, xK_bracketleft), spawn "rofi -show vscode-recent -modi vscode-recent"),
-  ((modKey, xK_period), spawn "rofimoji --action clipboard"),
+  ((modKey, xK_period), spawn "rofimoji --action clipboard --skin-tone neutral"),
   ((modKey, xK_Return), spawn "xterm"),
   ((0, xF86XK_MonBrightnessDown), spawn "brightnessctl s 5%-"),
   ((0, xF86XK_MonBrightnessUp), spawn "brightnessctl s +10%"),

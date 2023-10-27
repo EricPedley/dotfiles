@@ -53,3 +53,4 @@ neofetch
 source /opt/ros/noetic/setup.bash
 # autojump
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+source /usr/share/nvm/init-nvm.sh
