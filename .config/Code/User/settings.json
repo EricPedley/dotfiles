@@ -4,7 +4,7 @@
     ],
     "julia.symbolCacheDownload": true,
     "julia.enableTelemetry": false,
-    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace",
+    "editor.fontFamily": "'Monocraft','Source Code Pro', 'monospace', monospace",
     "keyboard.dispatch": "keyCode",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
@@ -12,10 +12,45 @@
     "indentRainbow.indicatorStyle": "light",
     "githubPullRequests.pullBranch": "never",
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Default Dark+ Experimental",
     "workbench.panel.defaultLocation": "right",
     "cSpell.userWords": [
+        "Keypoints",
         "setpoint"
     ],
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "background.editorBackgrounds": [
+        "/home/eric/Pictures/wallpapers/vscode/*.jpg"
+    ],
+    "background.sidebarBackgrounds": [
+        "/home/eric/Pictures/wallpapers/vscode/*.jpg"
+    ],
+    "background.panelBackgrounds": [
+        "/home/eric/Pictures/wallpapers/vscode/*.jpg"
+    ],
+    "background.useWindowOptionsForAllBackgrounds": true,
+    "yaclock.hour12": true,
+    "yaclock.showAmPm": true,
+    "yaclock.prefix": "⏰ ",
+    "explorer.confirmDragAndDrop": false,
+    "vim.useSystemClipboard": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "notebook.lineNumbers": "on",
+    "python.defaultInterpreterPath": "/opt/miniconda3/bin/python",
+    "editor.lineNumbers": "off",
+    "powermode.shake.intensity": 1,
+    "powermode.combo.location": "off",
+    "powermode.shake.enabled": false,
+    "powermode.explosions.maxExplosions": 2,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": -1,
+    "github.copilot.editor.enableAutoCompletions": true
 }
