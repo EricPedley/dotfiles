@@ -1,0 +1,139 @@
+[
+    // changes workbench tab behavior
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "python.execInTerminal-icon"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "-redo"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+k z",
+        "command": "-workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.tasks.test"
+    },
+    {
+        "command": "activitusbar.showExplorerView",
+        "key": "ctrl+shift+E",
+        "mac": "shift+cmd+E"
+    },
+    {
+        "command": "activitusbar.showSearchViewWithSelection",
+        "key": "ctrl+shift+F",
+        "mac": "shift+cmd+F"
+    },
+    {
+        "command": "activitusbar.showReplaceViewWithSelection",
+        "key": "ctrl+shift+H",
+        "mac": "shift+cmd+H"
+    },
+    {
+        "command": "activitusbar.showScmView",
+        "key": "ctrl+shift+G",
+        "mac": "shift+cmd+G"
+    },
+    {
+        "command": "activitusbar.showDebugView",
+        "key": "ctrl+shift+D",
+        "mac": "shift+cmd+D"
+    },
+    {
+        "command": "activitusbar.showExtensionsView",
+        "key": "ctrl+shift+X",
+        "mac": "shift+cmd+X"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "-editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "cd '${fileDirname}'\r"
+        }
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
+        "key": "ctrl+shift+alt+g",
+        "command": "workbench.action.tasks.runTask",
+        "args": "gimp"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-extension.vim_ctrl+w",
+        "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-github.copilot.generate",
+        "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-extension.vim_ctrl+[",
+        "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "editor.action.outdentLines"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "extension.vim_ctrl+["
+    },
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.quickOpen"
+    }
+]
